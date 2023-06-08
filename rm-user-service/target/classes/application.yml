@@ -1,0 +1,33 @@
+
+server:
+   port: 9001
+     
+spring:
+  application:
+      name: rm-user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/msdb?useSSL=false
+    username: root
+    password: root   
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database: mysql
+ 
+eureka:
+ client:
+   serviceUrl:
+     defaultZone: http://localhost:8761/eureka
+     
+#Via Postman Testing     
+#getAllUsers:     GET:    http://localhost:9001/users 
+#getUserById:     GET:    http://localhost:9001/users/3
+#createUser:      POST:   http://localhost:9001/users {"firstName":"Scott", "lastName":"Tiger", "mobileNumber":"44444", "email":"scottt@gmail.com"}
+#deleteUserById:  DELETE: http://localhost:9001/users/3
+#getUserByEmail:  GET:    http://localhost:9001/users/email/ramesh@gmail.com
+
+
+ 
