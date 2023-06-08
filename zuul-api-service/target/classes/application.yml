@@ -1,0 +1,23 @@
+
+server:
+   port: 8686
+
+eureka:
+   instance:
+      hostname: localhost
+  
+spring:
+   application:
+      name: rm-api-gateway
+   cloud:
+      gateway:
+         routes:
+         - id: rm-user-service
+           uri: http://localhost:9001/
+           predicates: 
+              - Path=/user/** 
+         - id: rm-info-service
+           uri: http://localhost:9002/
+           predicates: 
+              - Path=/info/** 
+            
