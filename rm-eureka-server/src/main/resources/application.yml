@@ -1,0 +1,34 @@
+server:
+   port: 8761
+   
+spring:
+   application:
+      name: rm-eureka-server
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 1800000  #30 mins
+  instance:
+    hostname: localhost
+
+logging:
+   level:
+      com.netflix.eureka: OFF
+      com.netflix.discovery: OFF
+---
+spring:
+   profiles: dev
+   application:
+      name: rm-eureka-server
+server:
+   port: 9090
+ 
+ 
+ 
+ 
+ 
+ 
+ 
