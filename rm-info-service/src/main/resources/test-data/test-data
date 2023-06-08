@@ -1,0 +1,21 @@
+{
+    "firstName":"James",
+    "lastName":"Vasanth",
+    "mobileNumber":"11111",
+    "email":"jamesv@gmail.com"
+}
+
+User Service using FeinClient
+=============================
+Post::  http://localhost:9001/user/create  
+Get::  	http://localhost:9001/user/getAll
+Get::  	http://localhost:9001/user/getById/9
+Get::  	http://localhost:9001/user/getByEmail/arulk@gmail.com
+** Delete::  http://localhost:9001/user/delete/001
+
+
+info Service
+=============
+Get::  	http://localhost:9002/info/getAllUserInfo
+Get::  	http://localhost:9002/info/getUserByEmailInfo/issaca@gmail.com
+Get::  	http://localhost:9002/info/getUserByIdInfo/10
