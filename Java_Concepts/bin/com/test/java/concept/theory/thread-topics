@@ -1,0 +1,23 @@
+Mutual Exclusion
+================
+It ensures that only one thread can execute the 
+critical section of a computer program at a time.
+
+To access a critical section, a thread acquires the mutex, 
+then accesses the critical section, and finally releases the mutex.
+
+Semaphore 
+==========
+ is a thread synchronization construct that avoids missed signals between threads 
+ by sending signals to the threads and protecting critical sections. 
+ 
+ With the use of counters, Semaphore manages access to the shared resources.
+ 
+ Synchronization
+ ================
+ the capability to control the access of multiple threads to any shared resource. 
+ In the Multithreading concept, multiple threads try to access the shared resources
+ at a time to produce inconsistent results. 
+ The synchronization is necessary for reliable communication between threads.
+ 
+ 
