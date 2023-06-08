@@ -1,0 +1,95 @@
+
+GET 	- It is used to request data from a specified resource.
+HEAD 	- The HEAD method is identical to GET except that the server MUST NOT return a message-body in the response.
+
+POST	- is used to send data to a server to create a resource.
+PUT 	- Transforming the resources when the client transmits whole data/ whole resource.
+PATCH	- Transforming the resources when the client transmits partial data that 
+          will be updated without changing the whole data.
+
+DELETE	- It is used to delete the specified resource. 
+OPTIONS	- It is used to communication options for the target resource.
+
+
+200 - “Everything is OK.”
+=========================
+This is the code that is delivered when a web page or resource 
+acts exactly the way it's expected to. 
+
+201 - “Created.”
+================
+The server has fulfilled the browser's request, and as a result, has created a new resource.
+
+
+400 - Bad Request
+==================
+Bad Request response status code indicates that the server cannot or will not process 
+the request due to something that is perceived to be a client error
+
+401 - Unauthorized Response
+===========================
+the client request has not been completed because it lacks valid authentication 
+credentials for the requested resource
+
+402 - Payment Required
+==========================
+Payment Required is a nonstandard response status code that is reserved for future use. 
+This status code was created to enable digital cash or (micro) payment systems and 
+would indicate that the requested content is not available until the client makes a payment.
+
+403 - Forbidden response
+========================
+indicates that the server understands the request but refuses to authorize it.
+This status is similar to 401 , but for the 403 Forbidden status code, 
+re-authenticating makes no difference. The access is tied to the application logic, 
+such as insufficient rights to a resource.
+
+404 - page Not Found
+====================
+404 is a status code that tells a web user that a requested page is not available. 
+404 and other response status codes are part of the web's Hypertext Transfer Protocol 
+response codes. The 404 code means that a server could not find a client-requested webpage.
+
+500 - Internal Server Error
+===========================
+that the server encountered something unexpected that prevented it from fulfilling the request. 
+In some ways, it's an ambiguous error.
+
+1xx Status Codes (informational requests)
+========================================
+100 – Continue
+101 – Switching protocol
+103 – Checkpoints
+
+2xx Status Codes (successful requests)
+======================================	
+200 – OK 
+201 – Created
+202 – Accepted
+205 – Reset Content
+206 – Partial Content
+
+3xx Status Codes (redirect)
+===========================
+301 – Moved Permanently
+302 – Found
+304 – Not Modified
+305 – Use Proxy
+307 – Temporary Redirect
+
+4xx Status Codes (Client Error)
+===============================
+400 – Bad Request
+401 – Unauthorized
+403 – Forbidden
+404 – Not Found
+408 – Request Timeout
+410 – Gone
+429 – Too Many Requests
+
+5xx Status Codes (Server Error)
+===============================
+500 – Internal Server Error
+502 – Bad Gateway
+503 – Service Unavailable
+504 – Gateway Timeout
