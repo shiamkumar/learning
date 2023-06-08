@@ -1,0 +1,71 @@
+ OAuth
+ ======
+ OAuth means open authorization protocol. 
+ This protocol allows you to access the client applications on HTTP 
+ for third-party providers GitHub, Facebook, etc. 
+ It helps you to share resources stored on one site with another site 
+ without the need for their credentials.
+ 
+ Advantages of Microservices
+ =============================
+ 1. Easy Deployment 
+ 2. Require Less Development Effort
+ 3. Mixed Technical Stack
+ 4. Independent Development
+ 5. Improves Workflow
+ 6. No Dependence On One Technical Slack
+ 7. Offer Improved Fault Isolation
+ 
+ Limitations of Microservices
+ =============================
+ 1. Building
+ 2. Testing
+ 3. Deployment
+ 4. Logging and Monitoring
+
+API Gateway
+===========
+=>Single entry point for all clients.
+=>API Gateway serves as a reverse proxy to accept API calls from the client application, 
+forwarding this traffic to the appropriate service.
+
+Circuit Breaker
+===============
+=> allows microservices to communicate as usual and monitor the number of failures occurring 
+	within the defined time period
+=>create resilient microservices by limiting the impact of service failures and latencies.
+=>It can allow a microservice to continue operating when a related service fails, 
+preventing the failure from cascading and giving the failing service time to recover
+
+Load Balancer
+=============
+=>It serves as the single point of contact for clients.
+=>A load balancer acts as the “traffic cop” sitting in front of your servers and routing
+ client requests across all servers capable of fulfilling those requests in a manner that 
+ maximizes speed and capacity utilization and ensures that no one server is overworked, 
+ which could degrade performance.
+ =>Application Load Balancers, and 
+ =>Network Load Balancers.
+ 
+ Config Server
+ =============
+ =>Central configuration server provides configurations (properties) to each micro service connected.
+ =>The Config Server can be used to communicate with different Config Stores one at a time or all at the same time.
+ 
+ discovery
+ ==========
+ =>A client-side discovery pattern searches the service registry to locate a service provider, 
+ selects an appropriate and available service instance using a load balancing algorithm, 
+ and then makes a request.
+ =>In a server-side discovery pattern, the router searches the service registry and, 
+ once the applicable service instance is found, forwards the request accordingly.
+ 
+ API gateway
+ ===========
+ An API gateway is an API management tool that sits between a client and a collection of
+ backend services. An API gateway acts as a reverse proxy to accept all application programming
+ interface (API) calls, aggregate the various services required to fulfill them, and return the appropriate result.
+ 
+ 
+
+ 

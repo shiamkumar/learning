@@ -1,0 +1,58 @@
+1: Decomposition
+2: Service Registry
+3: API Gateway
+4: Circuit Breaker
+5: Aggregator
+6: Asynchronous Messaging
+7: Database or Shared Data
+8: Event-Driven Architecture
+9: Command Query Responsibility Segregation (CQRS)
+10: Chained or Chain of Responsibility
+11: Bulkhead Pattern
+12: Backends for Frontends (BFF)
+
+Service Registry 
+================
+This pattern provides a central location for services to register themselves.
+
+Circuit Breaker
+===============
+Allows your services to fail fast and prevent cascading failures, 
+the circuit breaker pattern is used to isolate a failing service.
+
+API Gateway
+===========
+Provides a common entry point for all the requests and responses from the system. 
+So, client only remember one host/port address rather than multiple IPs for each Microservice.
+
+Event-Driven Architecture 
+==========================
+Allows services to communicate with each other by emitting events.
+
+Database per Service
+====================
+Each service has its own database, which allows services to operate independently.
+ 
+Command Query Responsibility Segregation (CQRS)
+===============================================
+Separates read and write requests for an application, 
+allowing better scaling and performance.
+
+Externalized Configuration 
+==========================
+Allows storing configuration data outside of the application code, 
+making it easier to manage configuration changes.
+
+Saga Pattern
+=============
+manages the transaction for long-running transactions that span multiple services.
+
+Bulkhead Pattern 
+================
+Isolates failures within a microservice, 
+so a single failure does not bring down the entire system
+
+Backends for Frontends (BFF)
+============================
+It provides a specific backend for each client. 
+It allows the front-end team to develop features and add new client-specific functionality quickly.
