@@ -1,0 +1,28 @@
+
+#Add Employee
+Request URL		: http://localhost:8080/employee
+Request Method	: POST
+Payload			: {"name":"Usman", "address":"Istanbul"}
+
+#Update Employee
+Request URL		: http://localhost:8080/employee
+Request Method	: PUT
+Payload: {"id"	:"2", "name":"Isaac", "address":"London"}
+
+#Delete Employee By Id
+Request URL		: http://localhost:8080/employee/3
+Request Method	: DELETE
+
+#Get All Employee
+Request URL		: http://localhost:8080/employees
+Request Method	: GET
+
+#Get Employee By Id
+Request URL		: http://localhost:8080/employeeById/3
+Request Method	: GET
+
+#Get Employee By Id And Name
+Request URL		: http://localhost:8080/employeeByIdAndName/2/Peter
+Request Method	: GET
+
+
