@@ -1,0 +1,57 @@
+Java Optimization
+=================
+1)Avoid Writing Long Methods
+2)Avoid Multiple If-else Statements (use switch case)
+3)Avoid Getting the Size of the Collection in the Loop
+	wrong way
+	=========
+	List<String> objList = getData();
+	for (int i = 0; i < objList.size(); i++) { execute code ..}
+
+	correct way
+	===========
+	List<String> objList = getData();
+	int size = objList.size();
+	for (int i = 0; i < size; i++) { execute code ..} 
+
+4)Avoid Using String Objects For Concatenation (Use StringBuilder for concatenation of strings)
+	wrong way
+	=========
+	String query = String1+String2+String3;
+	
+	correct way
+	===========
+	StringBuilder builder = new StringBuilder("");
+	builder.append(String1).append(String2).append(String3);
+	String query = builder.toString(); 
+5)Use Primitive Types Wherever Possible or else Use the Stack and Avoid the Heap
+6)Avoid Using BigDecimal Class
+7)Avoid Creating Big Objects Often
+8)Use of Unnecessary Log Statements and Incorrect Log Levels
+	wrong way
+	=========
+	Logger.debug("User info : " + user.toString());
+	Logger.info("Method called for setting user data:" + user.getData());
+	
+	correct way
+	===========
+	Logger.debug(“User info : ” + user.getName() + ” : login ID : ” + user.getLoginId());
+	Logger.info(“Method called for setting user data”);
+===========================================================================================	
+9)Use Stored Procedures Instead of Queries
+10)Using PreparedStatement instead of Statement
+11)Use Database Index
+12)Use Database Connection Pool
+13)Use JDBC Batch Update
+14)Disable auto-commit
+15)Use Caching in Java Applications 
+16)Select Required Columns in a Query
+	wrong way
+	=========
+	select * from users where user_id = 100;
+	
+	correct way
+	===========
+	select user_name, user_age, user_gender from users where user_id = 100;
+17)Fetch the Data Using Joins
+===========================================================================================
