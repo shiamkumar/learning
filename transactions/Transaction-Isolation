@@ -1,0 +1,55 @@
+Transaction-Isolation
+========================
+1.Read Committed
+2.Read Uncommitted
+3.Repeatable Reads
+4.Serializable
+
+Syntax: @Transactional(isolation = Isolation.READ_UNCOMMITTED)
+
+Dirty Reads
+===========
+when a transaction reads data that has been modified by another transaction, 
+but not yet committed
+For example, suppose transaction 1 updates a row. 
+Transaction 2 reads the updated row before transaction 1 commits the update.
+Non Repeatable Read
+=====================
+A non-repeatable read occurs when a transaction reads the same row twice 
+but gets different data each time. 
+For example, suppose transaction 1 reads a row. 
+Transaction 2 updates or deletes that row and commits the update or delete.
+
+Phantom Read
+=============
+A phantom read can occur when two identical read operations are performed, 
+but two different sets of results are returned because an update has occurred 
+on the data between the read operations.
+For example, if a SELECT is executed twice, but returns a row the second time 
+that was not returned the first time, the row is a “phantom” row.
+
+Read Committed
+===============
+This means the database will not read any of the uncommitted values
+Dirty Reads: No 
+Non Repeatable Read: Yes
+Phantom: Yes
+
+Read Uncommitted
+=================
+Dirty Reads: Yes
+Non Repeatable Read: Yes
+Phantom: Yes	
+
+Repeatable Reads
+================
+Dirty Reads: No
+Non Repeatable Read: No
+Phantom: Yes
+
+Serializable
+============
+Dirty Reads: No
+Non Repeatable Read: No
+Phantom: No
+

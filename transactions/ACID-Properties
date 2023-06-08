@@ -1,0 +1,21 @@
+ACID Properties
+===============
+Atomicity
+=========
+This property specifies that every transaction on the database should be 
+atomic in nature. The series of commands in a transaction should be executed as a 
+single entity and in case of any exception, it should be rolled back as a 
+single entity. There should be no state of partial execution of a transaction.
+
+Consistency
+===========
+It means that the transaction should not violate any of the constraints of the db.
+
+Isolation 
+=========
+It means that a particular transaction should see itself as the only transaction in the db.
+ 
+Durability
+==========
+It means the changes done by a particular transaction should be durable and should be
+ persistent on the disk.

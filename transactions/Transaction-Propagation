@@ -1,0 +1,41 @@
+Transaction-Propagation
+========================
+1.REQUIRED
+2.REQUIRES_NEW
+3.SUPPORTS
+4.NOT_SUPPORTED
+5.MANDATORY
+6.NEVER
+
+Syntax: @Transactional(propagation = Propagation.REQUIRED)
+  
+REQUIRED
+========
+Always executes in a transaction. If there is any existing transaction it uses it. 
+If none exists then only a new one is created.
+
+REQUIRES_NEW
+=============
+Always executes in a new transaction. 
+If there is any existing transaction it gets suspended.
+
+SUPPORTS
+========
+It may or may not run in a transaction. 
+If current transaction exists then it is supported. 
+If none exists then gets executed with out transaction.
+
+NOT_SUPPORTED
+=============
+Always executes without a transaction. 
+If there is any existing transaction it gets suspended.
+
+MANDATORY
+=========
+Always executes in a transaction. If there is any existing transaction it is used. 
+If there is no existing transaction it will throw an exception.
+
+NEVER
+======
+Always executes with out any transaction. 
+It throws an exception if there is an existing transaction.
